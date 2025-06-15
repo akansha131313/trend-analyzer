@@ -16,6 +16,5 @@ def stockAnalyze(stocks):
         return df
 
 
-#print(listStock)
 
 
