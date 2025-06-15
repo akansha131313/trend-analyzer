@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 st.title("Stocks Trend Analyzer--Happy Father's Day!!")
 
-ticker = st.text_input("Enter a stock ticker:", "AAPL")
+ticker = st.text_input("Enter a stock ticker:")
 
 if ticker:
     df = stockAnalyze(ticker)
