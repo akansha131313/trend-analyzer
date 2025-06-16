@@ -8,4 +8,6 @@ ticker = st.text_input("Enter a stock ticker:", "AAPL")
 
 if ticker:
     df = stockAnalyze(ticker)
+    st.success(f"Data loaded for {ticker}")
+    st.dataframe(df.tail()) 
     st.line_chart(df[["Close", "MA20", "MA50"]])
