@@ -11,5 +11,3 @@ def stockAnalyze(name):
     return df
 
 
-print(stockAnalyze("MSFT"))
-
