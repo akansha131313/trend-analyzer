@@ -4,11 +4,10 @@ import matplotlib.pyplot as plt
 
 st.title("Stocks Trend Analyzer")
 
-ticker = st.text_input("Enter a stock ticker:", "AAPL").strip().upper()
+ticker = st.text_input("Enter a stock ticker:", "AAPL")
 
 if ticker:
     df = stockAnalyze(ticker)
-    
     if df is None or df.empty:
         st.error("No data found. Please check the ticker symbol or try again later.")
     else:
