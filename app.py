@@ -4,8 +4,9 @@ import matplotlib.pyplot as plt
 
 st.title("Stocks Trend Analyzer--Happy Father's Day!!")
 
-ticker = st.text_input("Enter a stock ticker:")
+ticker = input("Enter a stock ticker:")
+data = st.text_input("Enter a stock ticker:", ticker )
 
-if ticker:
+if data:
     df = stockAnalyze(ticker)
     st.line_chart(df[["Close", "MA20", "MA50"]])
