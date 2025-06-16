@@ -8,4 +8,4 @@ ticker = input("Enter a stock ticker:")
 data = st.text_input("Enter a stock ticker:", ticker )
 
 if data:
-    st.line_chart(stockAnalyze(ticker))
+    st.line_chart(stockAnalyze(data))
